@@ -24,6 +24,7 @@ jobs:
           draft: false
           prerelease: false
   Export-solution-Feedback:
+    needs: [ build ]
     uses: ./.github/workflows/export-and-branch-solution.yml
     with:
       #You can specify the solution name here
